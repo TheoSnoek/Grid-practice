@@ -1,0 +1,40 @@
+#page {
+    display: grid;
+    background-color: hsl(212, 36%, 90%);
+    grid-template-areas:
+            "head head main main"
+            "head head main main"
+            "nav nav aside aside"
+            "nav nav aside aside"
+            "foot foot foot foot"
+            "foot foot foot foot";
+    grid-template-columns: 200px 200px 400px 400px;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-gap: 10px;
+}
+
+#page > header {
+    grid-area: head;
+    background-color: hsl(212, 43%, 65%)
+
+}
+
+#page > nav {
+    grid-area: nav;
+    background-color: hsl(212, 43%, 65%)
+}
+
+#page > main {
+    grid-area: main;
+    background-color: hsl(212, 43%, 65%)
+}
+
+#page > footer {
+    grid-area: foot;
+    background-color: hsl(212, 43%, 65%)
+}
+
+#page > aside {
+    grid-area: aside;
+    background-color: hsl(212, 43%, 65%)
+}
